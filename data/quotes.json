@@ -1,0 +1,10 @@
+[
+  {"id":1,"authorKo":"세네카","authorEn":"Seneca","ko":"행운은 준비가 기회를 만났을 때 찾아온다.","en":"Luck is what happens when preparation meets opportunity.","work":"서간집","origLang":"la","sourceNote":"세네카의 서간집에 전해지는 문장으로 널리 인용됨"},
+  {"id":2,"authorKo":"마르쿠스 아우렐리우스","authorEn":"Marcus Aurelius","ko":"우리의 삶은 우리의 생각이 만들어낸다.","en":"The happiness of your life depends upon the quality of your thoughts.","work":"명상록","origLang":"la","sourceNote":"명상록의 사상에서 요약된 번역 문장"},
+  {"id":3,"authorKo":"프리드리히 니체","authorEn":"Friedrich Nietzsche","ko":"왜 살아야 하는지를 아는 사람은 어떤 어려움도 견딜 수 있다.","en":"He who has a why to live can bear almost any how.","work":"우상의 황혼","origLang":"de","sourceNote":"니체의 저술에서 빅터 프랭클이 인용한 구절의 번역"},
+  {"id":4,"authorKo":"아르투어 쇼펜하우어","authorEn":"Arthur Schopenhauer","ko":"건강한 거지는 병든 왕보다 행복하다.","en":"A healthy beggar is happier than a sick king.","work":"소품과 부록","origLang":"de","sourceNote":"쇼펜하우어의 저술에서 전해지는 격언"},
+  {"id":5,"authorKo":"세네카","authorEn":"Seneca","ko":"어려움은 마음을 강하게 만든다. 노동은 몸을 강하게 만든다.","en":"Difficulties strengthen the mind, as labor does the body.","work":"섭리론","origLang":"la","sourceNote":"섭리론에서 전해지는 문장"},
+  {"id":6,"authorKo":"마르쿠스 아우렐리우스","authorEn":"Marcus Aurelius","ko":"아침에 일어나기 힘들 때, 인간으로서 해야 할 일을 생각하라.","en":"At dawn, when you have trouble getting out of bed, tell yourself: I have to go to work—as a human being.","work":"명상록","origLang":"la","sourceNote":"명상록 5권의 문장을 바탕으로 옮김"},
+  {"id":7,"authorKo":"프리드리히 니체","authorEn":"Friedrich Nietzsche","ko":"살아갈 이유가 있는 사람은 거의 모든 방식을 견딜 수 있다.","en":"He who has a why to live can bear almost any how.","work":"우상의 황혼","origLang":"de","sourceNote":"니체의 저술에서 널리 인용되는 문장"},
+  {"id":8,"authorKo":"아르투어 쇼펜하우어","authorEn":"Arthur Schopenhauer","ko":"인생의 처음 사십 년은 본문이고, 나머지는 주석이다.","en":"The first forty years of life give us the text; the next thirty supply the commentary.","work":"소품과 부록","origLang":"de","sourceNote":"쇼펜하우어의 저술에서 전해지는 격언"}
+]

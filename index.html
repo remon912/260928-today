@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="마음에 닿은 문장과 오늘의 생각을 기록하는 하루 한 줄 명언 노트">
+  <title>오늘, 한 줄</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/picker.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#today" aria-label="오늘, 한 줄 홈"><span class="brand-mark">하루</span><span>오늘, 한 줄</span></a>
+    <nav aria-label="주요 메뉴"><button class="nav-button active" data-view="today">오늘</button><button class="nav-button" data-view="calendar">기록</button></nav>
+    <button class="icon-button" id="backup-open" aria-label="백업 설정">↗</button>
+  </header>
+  <main id="app" class="layout">
+    <section class="quote-card" aria-label="오늘의 명언">
+      <div class="card-top"><div class="card-heading"><span class="tag">TODAY’S QUOTE</span><small id="today-label" class="card-date"></small></div><button class="text-button" id="change-quote">다른 문장 보기 <span>↗</span></button></div>
+      <blockquote id="quote-text"></blockquote><div class="quote-meta"><span class="quote-rule"></span><div><strong id="quote-author"></strong><small id="quote-work"></small></div></div>
+      <div class="card-foot"><span>천천히 읽고, 오래 간직하기</span><button id="share-card" class="share-button">문장 카드 저장 <span>↓</span></button></div>
+    </section>
+    <section class="journal">
+      <div class="section-heading"><div><span class="eyebrow">A LITTLE NOTE TO MYSELF</span><h2>오늘의 마음</h2></div><span class="autosave" id="save-status">자동 저장</span></div>
+      <label class="note-field"><span><b>01</b> 지금 내 기분은 어떤가요?</span><textarea id="feel" maxlength="5000" placeholder="지금의 마음을 편하게 적어보세요."></textarea></label>
+      <label class="note-field"><span><b>02</b> 오늘 발견한 감사와 배움</span><textarea id="reflect" maxlength="5000" placeholder="작은 깨달음도 충분히 소중해요."></textarea></label>
+      <label class="note-field"><span><b>03</b> 내일을 위한 작은 약속</span><textarea id="plan" maxlength="5000" placeholder="내가 할 수 있는 작은 한 가지."></textarea></label>
+    </section>
+    <section class="calendar-section hidden" id="calendar-view"><div class="section-heading"><div><span class="eyebrow">LOOK BACK, GENTLY</span><h2>나의 기록</h2></div><div class="month-control"><button id="prev-month" aria-label="이전 달">‹</button><strong id="month-label"></strong><button id="next-month" aria-label="다음 달">›</button></div></div><div class="calendar-grid" id="calendar-grid"></div><article class="day-detail" id="day-detail"><p>날짜를 선택하면 그날의 기록을 볼 수 있어요.</p></article></section>
+    <footer><span>오늘을 다정하게 기억하는 방법</span><span>YOUR DAY, YOUR WORDS</span></footer>
+  </main>
+  <dialog id="backup-dialog"><form method="dialog"><button class="dialog-close" aria-label="닫기">×</button><span class="eyebrow">YOUR NOTES, YOURS</span><h2>기록을 안전하게 보관해요</h2><p>기록은 이 기기에만 저장됩니다. JSON 파일로 내보내거나 이전 백업을 가져올 수 있어요.</p><div class="dialog-actions"><button type="button" class="button secondary" id="export-json">백업 내보내기</button><label class="button primary">백업 가져오기<input type="file" id="import-json" accept="application/json,.json" hidden></label></div></form></dialog>
+  <dialog id="quote-dialog"><form method="dialog"><button class="dialog-close" aria-label="닫기">×</button><span class="eyebrow">FIND YOUR WORDS</span><h2>오늘의 문장을 골라요</h2><label class="filter-label">말한 사람 <select id="author-filter"><option value="all">모두 보기</option></select></label><div id="quote-candidates" class="quote-candidates"></div><button type="button" id="more-quotes" class="button secondary more-button">다른 문장 더 보기</button></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Keyboard, contrast and touch target refinements */
+.nav-button,.icon-button,.text-button,.share-button,.month-control button,.dialog-close{min-width:44px;min-height:44px}
+.nav-button{padding-inline:8px}
+.icon-button{width:44px;height:44px}
+.text-button,.share-button{padding:8px}
+.month-control button{width:44px}
+.autosave,.intro-copy,.tag,.quote-meta small,.card-foot,footer,.candidate span{color:#687166}
+.note-field textarea:focus-visible,.filter-label select:focus-visible,button:focus-visible,.button:focus-visible{outline:2px solid #456254;outline-offset:3px}
+textarea{scroll-margin-block:20px}
+.quote-card{border-radius:18px;overflow:hidden}
+.card-heading{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.card-date{font-size:10px;color:#687166}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
